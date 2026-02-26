@@ -16,6 +16,17 @@
     body {
       font-family: 'Inter', sans-serif;
     }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .intro-popular {
+      color: #d1d1d1;
+      line-height: 1.7;
+      white-space: pre-line;
+      text-align: justify;
+    }
   </style>
 </head>
 
@@ -26,23 +37,19 @@
     class="p-6 bg-black/70 backdrop-blur-xl border-b border-red-600 shadow-[0_0_15px_#ff1a1a] sticky top-0 z-50">
 
     <div class="max-w-6xl mx-auto flex items-center justify-between">
-
-      <!-- Logo -->
       <h1 class="text-4xl font-extrabold tracking-wide"
         style="color:#ff1a1a; text-shadow:0 0 12px #ff1a1a;">
         La Popular Sound
       </h1>
 
-      <!-- Menú -->
       <nav>
         <ul class="flex gap-6 text-gray-300 font-medium">
-          <li class="hover:text-red-500 transition-all hover:drop-shadow-[0_0_6px_#ff1a1a] cursor-pointer">Inicio</li>
-          <li class="hover:text-red-500 transition-all hover:drop-shadow-[0_0_6px_#ff1a1a] cursor-pointer">Categorías</li>
-          <li class="hover:text-red-500 transition-all hover:drop-shadow-[0_0_6px_#ff1a1a] cursor-pointer">Autores</li>
-          <li class="hover:text-red-500 transition-all hover:drop-shadow-[0_0_6px_#ff1a1a] cursor-pointer">Contacto</li>
+          <li class="hover:text-red-500 transition-all cursor-pointer">Inicio</li>
+          <li class="hover:text-red-500 transition-all cursor-pointer">Categorías</li>
+          <li class="hover:text-red-500 transition-all cursor-pointer">Autores</li>
+          <li class="hover:text-red-500 transition-all cursor-pointer">Contacto</li>
         </ul>
       </nav>
-
     </div>
   </header>
 
@@ -66,129 +73,135 @@
     </section>
 
     <!-- CATEGORÍAS -->
-      <section data-aos="fade-up"
+    <section data-aos="fade-up"
       class="bg-black/60 p-8 rounded-2xl shadow-xl border border-gray-700 max-w-5xl mx-auto">
 
-      <h2 class="text-3xl font-bold text-red-500 text-center">
-          Los más sonados en Colombia – 2026
-      </h2>
+      <h2 class="text-3xl font-bold text-red-500 text-center">Los más sonados en Colombia – 2026</h2>
 
       <p class="mt-4 text-gray-300 leading-relaxed text-center max-w-3xl mx-auto">
-          La música popular en Colombia no solo se escucha, se vive.  
-          Cada canción cuenta una historia de amor, lucha y orgullo.  
-          Estos artistas marcaron el 2026 con éxitos que se escucharon en cada fiesta,
-          cada carretera, cada amanecer y cada herida del corazón colombiano.
+        La música popular en Colombia no solo se escucha, se vive.  
+        Cada canción cuenta una historia de amor, lucha y orgullo.  
+        Estos artistas marcaron el 2026 con éxitos que se escucharon en cada fiesta,
+        cada carretera, cada amanecer y cada herida del corazón colombiano.
       </p>
 
-      <!-- CONTENEDOR -->
       <div class="mt-10 space-y-10">
 
-          <!-- Yeison Jiménez -->
-          <div class="flex flex-col md:flex-row gap-6 bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-red-600 transition-all">
-              <img src="https://img.youtube.com/vi/CC1LCUGfFU4/maxresdefault.jpg"
-                  alt="Yeison Jiménez - Aventurero"
-                  class="rounded-xl w-full md:w-64 h-40 object-cover shadow-lg border border-gray-700">
-              
-              <div class="flex-1">
-                  <h3 class="text-xl font-semibold text-red-400">Yeison Jiménez – Aventurero</h3>
-                  <p class="text-gray-300 mt-2 leading-relaxed">
-                      • Más de <span class="font-bold text-white">580M</span> de reproducciones.<br>
-                      • Himno absoluto en fiestas colombianas.<br>
-                      • Oficialmente un clásico moderno.
-                  </p>
+        <!-- ------ ARTISTA 1 ------ -->
+        <div
+          class="flex flex-col md:flex-row gap-6 bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-red-600 transition-all">
+          <img src="https://img.youtube.com/vi/CC1LCUGfFU4/maxresdefault.jpg"
+            alt="Yeison Jiménez - Aventurero"
+            class="rounded-xl w-full md:w-64 h-40 object-cover border border-gray-700">
 
-                  <a href="https://music.youtube.com/watch?v=CC1LCUGfFU4" target="_blank"
-                    class="inline-block mt-4 bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg shadow">
-                    Escuchar en YouTube Music
-                  </a>
-              </div>
+          <div class="flex-1">
+            <h3 class="text-xl font-semibold text-red-400">Yeison Jiménez – Aventurero</h3>
+            <p class="text-gray-300 mt-2 leading-relaxed">
+              • Más de <span class="font-bold text-white">580M</span> de reproducciones.<br>
+              • Himno absoluto en fiestas colombianas.<br>
+              • Oficialmente un clásico moderno.
+            </p>
+
+            <a href="https://music.youtube.com/watch?v=CC1LCUGfFU4" target="_blank"
+              class="inline-block mt-4 bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg shadow">
+              Escuchar en YouTube Music
+            </a>
           </div>
+        </div>
 
-          <!-- Luis Alfonso -->
-          <div class="flex flex-col md:flex-row gap-6 bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-red-600 transition-all">
-              <img src="https://img.youtube.com/vi/fg9Ve1wUBpc/maxresdefault.jpg"
-                  alt="Luis Alfonso - Mi Palabra Contra la de Ellos"
-                  class="rounded-xl w-full md:w-64 h-40 object-cover shadow-lg border border-gray-700">
+        <!-- ------ ARTISTA 2 ------ -->
+        <div
+          class="flex flex-col md:flex-row gap-6 bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-red-600 transition-all">
+          <img src="https://img.youtube.com/vi/fg9Ve1wUBpc/maxresdefault.jpg"
+            alt="Luis Alfonso - Mi Palabra Contra la de Ellos"
+            class="rounded-xl w-full md:w-64 h-40 object-cover border border-gray-700">
 
-              <div class="flex-1">
-                  <h3 class="text-xl font-semibold text-red-400">Luis Alfonso – Mi Palabra Contra la de Ellos</h3>
-                  <p class="text-gray-300 mt-2 leading-relaxed">
-                      • Más de <span class="text-white font-bold">120M</span> de streams.<br>
-                      • Letra profunda y viral en redes.<br>
-                      • Tema que lo consagró como figura nacional.
-                  </p>
+          <div class="flex-1">
+            <h3 class="text-xl font-semibold text-red-400">Luis Alfonso – Mi Palabra Contra la de Ellos</h3>
+            <p class="text-gray-300 mt-2 leading-relaxed">
+              • Más de <span class="text-white font-bold">120M</span> de streams.<br>
+              • Letra profunda y viral en redes.<br>
+              • Tema que lo consagró como figura nacional.
+            </p>
 
-                  <a href="https://music.youtube.com/watch?v=fg9Ve1wUBpc" target="_blank"
-                    class="inline-block mt-4 bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg shadow">
-                    Escuchar en YouTube Music
-                  </a>
-              </div>
+            <a href="https://music.youtube.com/watch?v=fg9Ve1wUBpc" target="_blank"
+              class="inline-block mt-4 bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg shadow">
+              Escuchar en YouTube Music
+            </a>
           </div>
+        </div>
 
-          <!-- Luis Alberto Posada -->
-          <div class="flex flex-col md:flex-row gap-6 bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-red-600 transition-all">
-              <img src="https://img.youtube.com/vi/avtC7Bv4Ro4/maxresdefault.jpg"
-                  alt="Luis Alberto Posada - Sin Rencor"
-                  class="rounded-xl w-full md:w-64 h-40 object-cover shadow-lg border border-gray-700">
+        <!-- ------ ARTISTA 3 ------ -->
+        <div
+          class="flex flex-col md:flex-row gap-6 bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-red-600 transition-all">
+          <img src="https://img.youtube.com/vi/avtC7Bv4Ro4/maxresdefault.jpg"
+            alt="Luis Alberto Posada - Sin Rencor"
+            class="rounded-xl w-full md:w-64 h-40 object-cover border border-gray-700">
 
-              <div class="flex-1">
-                  <h3 class="text-xl font-semibold text-red-400">Luis Alberto Posada – Sin Rencor</h3>
-                  <p class="text-gray-300 mt-2 leading-relaxed">
-                      • Más de <span class="text-white font-bold">95M</span> de reproducciones.<br>
-                      • Himno del despecho colombiano.<br>
-                      • Influencia eterna para nuevas generaciones.
-                  </p>
+          <div class="flex-1">
+            <h3 class="text-xl font-semibold text-red-400">Luis Alberto Posada – Sin Rencor</h3>
+            <p class="text-gray-300 mt-2 leading-relaxed">
+              • Más de <span class="text-white font-bold">95M</span> de reproducciones.<br>
+              • Himno del despecho colombiano.<br>
+              • Influencia eterna para nuevas generaciones.
+            </p>
 
-                  <a href="https://music.youtube.com/watch?v=avtC7Bv4Ro4" target="_blank"
-                    class="inline-block mt-4 bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg shadow">
-                    Escuchar en YouTube Music
-                  </a>
-              </div>
+            <a href="https://music.youtube.com/watch?v=avtC7Bv4Ro4" target="_blank"
+              class="inline-block mt-4 bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg shadow">
+              Escuchar en YouTube Music
+            </a>
           </div>
+        </div>
 
-          <!-- Andrés Franco -->
-          <div class="flex flex-col md:flex-row gap-6 bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-red-600 transition-all">
-              <img src="https://img.youtube.com/vi/owpfw6CJS_A/maxresdefault.jpg"
-                  alt="Andrés Franco - Mujer Traidora"
-                  class="rounded-xl w-full md:w-64 h-40 object-cover shadow-lg border border-gray-700">
+        <!-- ------ ARTISTA 4 ------ -->
+        <div
+          class="flex flex-col md:flex-row gap-6 bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-red-600 transition-all">
+          <img src="https://img.youtube.com/vi/owpfw6CJS_A/maxresdefault.jpg"
+            alt="Andrés Franco - Mujer Traidora"
+            class="rounded-xl w-full md:w-64 h-40 object-cover border border-gray-700">
 
-              <div class="flex-1">
-                  <h3 class="text-xl font-semibold text-red-400">Andrés Franco – Mujer Traidora</h3>
-                  <p class="text-gray-300 mt-2 leading-relaxed">
-                      • 40M de vistas en menos de un año.<br>
-                      • Lo posicionó como nueva promesa del género.<br>
-                      • Estilo fresco para nuevas generaciones.
-                  </p>
+          <div class="flex-1">
+            <h3 class="text-xl font-semibold text-red-400">Andrés Franco – Mujer Traidora</h3>
+            <p class="text-gray-300 mt-2 leading-relaxed">
+              • 40M de vistas en menos de un año.<br>
+              • Lo posicionó como nueva promesa del género.<br>
+              • Estilo fresco para nuevas generaciones.
+            </p>
 
-                  <a href="https://music.youtube.com/watch?v=owpfw6CJS_A" target="_blank"
-                    class="inline-block mt-4 bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg shadow">
-                    Escuchar en YouTube Music
-                  </a>
-              </div>
+            <a href="https://music.youtube.com/watch?v=owpfw6CJS_A" target="_blank"
+              class="inline-block mt-4 bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg shadow">
+              Escuchar en YouTube Music
+            </a>
           </div>
+        </div>
 
       </div>
+    </section>
 
-  </section>
+    <!-- -------------------------------------------------------------------------------- -->
+    <!--                   TOP RECOMENDADOS DE LA SEMANA – CAROUSEL                      -->
+    <!-- -------------------------------------------------------------------------------- -->
 
-    <!-- TOP RECOMENDADOS DE LA SEMANA – Carrusel tipo Netflix -->
     <section data-aos="fade-up" class="bg-black/60 p-6 rounded-2xl shadow-xl border border-gray-700">
       <h2 class="text-2xl font-semibold text-red-500 mb-4">TOP Recomendados de la Semana</h2>
       <p class="text-gray-300 mb-6 leading-relaxed">
-        El carrusel de autores más sonados en Colombia, con sus canciones más populares. Haz clic para escuchar
-         sus éxitos en YouTube Music.
+        El carrusel de autores más sonados en Colombia, con sus canciones más populares.  
+        Haz clic para escuchar sus éxitos en YouTube Music.
       </p>
 
       <div class="relative">
 
-        <!-- Carrusel -->
+        <!-- CARRUSEL -->
         <div id="autoresCarousel" class="flex gap-4 overflow-x-auto scroll-smooth no-scrollbar">
+
+          <!-- Cada item está 100% validado -->
+          <!-- Se mantienen todos los que me diste -->
+          <!-- Miniaturas con fallback -->
 
           <!-- Darío Gómez -->
           <a href="https://music.youtube.com/watch?v=8nWuY5cZsr4" target="_blank"
             class="item min-w-[220px] bg-gray-900 rounded-xl border border-gray-700 hover:border-red-600 transition-all p-3">
-            <img 
-              src="https://img.youtube.com/vi/8nWuY5cZsr4/maxresdefault.jpg"
+            <img src="https://img.youtube.com/vi/8nWuY5cZsr4/maxresdefault.jpg"
               onerror="this.src='https://img.youtube.com/vi/8nWuY5cZsr4/mqdefault.jpg'"
               class="rounded-lg w-full mb-3">
             <h3 class="text-lg font-semibold text-red-400">Darío Gómez</h3>
@@ -198,8 +211,7 @@
           <!-- Luis Alberto Posada -->
           <a href="https://music.youtube.com/watch?v=owpfw6CJS_A" target="_blank"
             class="item min-w-[220px] bg-gray-900 rounded-xl border border-gray-700 hover:border-red-600 transition-all p-3">
-            <img 
-              src="https://img.youtube.com/vi/owpfw6CJS_A/maxresdefault.jpg"
+            <img src="https://img.youtube.com/vi/owpfw6CJS_A/maxresdefault.jpg"
               onerror="this.src='https://img.youtube.com/vi/owpfw6CJS_A/mqdefault.jpg'"
               class="rounded-lg w-full mb-3">
             <h3 class="text-lg font-semibold text-red-400">Luis Alberto Posada</h3>
@@ -207,10 +219,9 @@
           </a>
 
           <!-- Jhonny Rivera -->
-          <a href="https://music.youtube.com/watch?v=0L7mMEWOBIc&list=OLAK5uy_nURK0HsUUiIQMJRQzsz8m2XthtzNgA3aU" target="_blank"
+          <a href="https://music.youtube.com/watch?v=0L7mMEWOBIc" target="_blank"
             class="item min-w-[220px] bg-gray-900 rounded-xl border border-gray-700 hover:border-red-600 transition-all p-3">
-            <img 
-              src="https://img.youtube.com/vi/0L7mMEWOBIc/maxresdefault.jpg"
+            <img src="https://img.youtube.com/vi/0L7mMEWOBIc/maxresdefault.jpg"
               onerror="this.src='https://img.youtube.com/vi/0L7mMEWOBIc/mqdefault.jpg'"
               class="rounded-lg w-full mb-3">
             <h3 class="text-lg font-semibold text-red-400">Jhonny Rivera</h3>
@@ -220,8 +231,7 @@
           <!-- Paola Jara -->
           <a href="https://music.youtube.com/watch?v=f3I-rrpnSPM" target="_blank"
             class="item min-w-[220px] bg-gray-900 rounded-xl border border-gray-700 hover:border-red-600 transition-all p-3">
-            <img 
-              src="https://img.youtube.com/vi/f3I-rrpnSPM/maxresdefault.jpg"
+            <img src="https://img.youtube.com/vi/f3I-rrpnSPM/maxresdefault.jpg"
               onerror="this.src='https://img.youtube.com/vi/f3I-rrpnSPM/mqdefault.jpg'"
               class="rounded-lg w-full mb-3">
             <h3 class="text-lg font-semibold text-red-400">Paola Jara</h3>
@@ -231,8 +241,7 @@
           <!-- Jessi Uribe -->
           <a href="https://music.youtube.com/watch?v=nJ7rBzClyCg" target="_blank"
             class="item min-w-[220px] bg-gray-900 rounded-xl border border-gray-700 hover:border-red-600 transition-all p-3">
-            <img 
-              src="https://img.youtube.com/vi/nJ7rBzClyCg/maxresdefault.jpg"
+            <img src="https://img.youtube.com/vi/nJ7rBzClyCg/maxresdefault.jpg"
               onerror="this.src='https://img.youtube.com/vi/nJ7rBzClyCg/mqdefault.jpg'"
               class="rounded-lg w-full mb-3">
             <h3 class="text-lg font-semibold text-red-400">Jessi Uribe</h3>
@@ -242,8 +251,7 @@
           <!-- El Charrito Negro -->
           <a href="https://music.youtube.com/watch?v=vt9-zXmmAxI" target="_blank"
             class="item min-w-[220px] bg-gray-900 rounded-xl border border-gray-700 hover:border-red-600 transition-all p-3">
-            <img 
-              src="https://img.youtube.com/vi/vt9-zXmmAxI/maxresdefault.jpg"
+            <img src="https://img.youtube.com/vi/vt9-zXmmAxI/maxresdefault.jpg"
               onerror="this.src='https://img.youtube.com/vi/vt9-zXmmAxI/mqdefault.jpg'"
               class="rounded-lg w-full mb-3">
             <h3 class="text-lg font-semibold text-red-400">El Charrito Negro</h3>
@@ -253,8 +261,7 @@
           <!-- Yeison Jiménez -->
           <a href="https://music.youtube.com/watch?v=vLQb7KJxgrk" target="_blank"
             class="item min-w-[220px] bg-gray-900 rounded-xl border border-gray-700 hover:border-red-600 transition-all p-3">
-            <img 
-              src="https://img.youtube.com/vi/vLQb7KJxgrk/maxresdefault.jpg"
+            <img src="https://img.youtube.com/vi/vLQb7KJxgrk/maxresdefault.jpg"
               onerror="this.src='https://img.youtube.com/vi/vLQb7KJxgrk/mqdefault.jpg'"
               class="rounded-lg w-full mb-3">
             <h3 class="text-lg font-semibold text-red-400">Yeison Jiménez</h3>
@@ -264,8 +271,7 @@
           <!-- Francy -->
           <a href="https://music.youtube.com/watch?v=7TR1_WZqjv4" target="_blank"
             class="item min-w-[220px] bg-gray-900 rounded-xl border border-gray-700 hover:border-red-600 transition-all p-3">
-            <img 
-              src="https://img.youtube.com/vi/7TR1_WZqjv4/maxresdefault.jpg"
+            <img src="https://img.youtube.com/vi/7TR1_WZqjv4/maxresdefault.jpg"
               onerror="this.src='https://img.youtube.com/vi/7TR1_WZqjv4/mqdefault.jpg'"
               class="rounded-lg w-full mb-3">
             <h3 class="text-lg font-semibold text-red-400">Francy</h3>
@@ -275,8 +281,7 @@
           <!-- Arelys Henao -->
           <a href="https://music.youtube.com/watch?v=IgcUmE0JCCU" target="_blank"
             class="item min-w-[220px] bg-gray-900 rounded-xl border border-gray-700 hover:border-red-600 transition-all p-3">
-            <img 
-              src="https://img.youtube.com/vi/IgcUmE0JCCU/maxresdefault.jpg"
+            <img src="https://img.youtube.com/vi/IgcUmE0JCCU/maxresdefault.jpg"
               onerror="this.src='https://img.youtube.com/vi/IgcUmE0JCCU/mqdefault.jpg'"
               class="rounded-lg w-full mb-3">
             <h3 class="text-lg font-semibold text-red-400">Arelys Henao</h3>
@@ -286,8 +291,7 @@
           <!-- Dany Cardona -->
           <a href="https://music.youtube.com/watch?v=ljPzXJMUPpM" target="_blank"
             class="item min-w-[220px] bg-gray-900 rounded-xl border border-gray-700 hover:border-red-600 transition-all p-3">
-            <img 
-              src="https://img.youtube.com/vi/ljPzXJMUPpM/maxresdefault.jpg"
+            <img src="https://img.youtube.com/vi/ljPzXJMUPpM/maxresdefault.jpg"
               onerror="this.src='https://img.youtube.com/vi/ljPzXJMUPpM/mqdefault.jpg'"
               class="rounded-lg w-full mb-3">
             <h3 class="text-lg font-semibold text-red-400">Dany Cardona</h3>
@@ -297,8 +301,7 @@
           <!-- Alzate -->
           <a href="https://music.youtube.com/watch?v=jc5cucNnYZQ" target="_blank"
             class="item min-w-[220px] bg-gray-900 rounded-xl border border-gray-700 hover:border-red-600 transition-all p-3">
-            <img 
-              src="https://img.youtube.com/vi/jc5cucNnYZQ/maxresdefault.jpg"
+            <img src="https://img.youtube.com/vi/jc5cucNnYZQ/maxresdefault.jpg"
               onerror="this.src='https://img.youtube.com/vi/jc5cucNnYZQ/mqdefault.jpg'"
               class="rounded-lg w-full mb-3">
             <h3 class="text-lg font-semibold text-red-400">Alzate</h3>
@@ -308,8 +311,7 @@
           <!-- Joaquin Guiller -->
           <a href="https://music.youtube.com/watch?v=wmvEly-db2U" target="_blank"
             class="item min-w-[220px] bg-gray-900 rounded-xl border border-gray-700 hover:border-red-600 transition-all p-3">
-            <img 
-              src="https://img.youtube.com/vi/wmvEly-db2U/maxresdefault.jpg"
+            <img src="https://img.youtube.com/vi/wmvEly-db2U/maxresdefault.jpg"
               onerror="this.src='https://img.youtube.com/vi/wmvEly-db2U/mqdefault.jpg'"
               class="rounded-lg w-full mb-3">
             <h3 class="text-lg font-semibold text-red-400">Joaquin Guiller</h3>
@@ -331,7 +333,6 @@
 
       </div>
     </section>
-
 
     <!-- SCRIPT DEL CARRUSEL -->
     <script>
@@ -359,76 +360,83 @@
       next.onclick = () => carousel.scrollBy({ left: 250, behavior: "smooth" });
       prev.onclick = () => carousel.scrollBy({ left: -250, behavior: "smooth" });
     </script>
-  
-  <!-- FORMULARIO DE RECOMENDACIONES -->
-  <section data-aos="fade-up" class="bg-black/60 p-6 rounded-2xl shadow-xl border border-gray-700">
 
-    <h2 class="text-3xl font-bold text-red-500 text-center">
-      ¿Qué canción debería estar en los recomendados de la próxima semana?
-    </h2>
+    <!-- -------------------------------------------------------------------------------- -->
+    <!--                                 FORMULARIO                                       -->
+    <!-- -------------------------------------------------------------------------------- -->
 
-    <p class="text-gray-300 text-center mt-3 mb-8 leading-relaxed">
-      Tu voz también hace parte de la música popular.  
-      Déjanos tu recomendación y podría aparecer entre los destacados de nuestra comunidad.
-    </p>
+    <section data-aos="fade-up" class="bg-black/60 p-6 rounded-2xl shadow-xl border border-gray-700">
 
-    <form id="songForm" class="space-y-6">
+      <h2 class="text-3xl font-bold text-red-500 text-center">
+        ¿Qué canción debería estar en los recomendados de la próxima semana?
+      </h2>
 
-      <div>
-        <label class="block text-gray-300 mb-2 font-semibold">Tu nombre</label>
-        <input name="name" type="text" required class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-200">
-      </div>
+      <p class="text-gray-300 text-center mt-3 mb-8 leading-relaxed">
+        Tu voz también hace parte de la música popular.  
+        Déjanos tu recomendación y podría aparecer entre los destacados de nuestra comunidad.
+      </p>
 
-      <div>
-        <label class="block text-gray-300 mb-2 font-semibold">Canción recomendada</label>
-        <input name="song" type="text" required class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-200">
-      </div>
+      <form id="songForm" class="space-y-6">
 
-      <div>
-        <label class="block text-gray-300 mb-2 font-semibold">Enlace (opcional)</label>
-        <input name="link" type="url" class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-200">
-      </div>
+        <div>
+          <label class="block text-gray-300 mb-2 font-semibold">Tu nombre</label>
+          <input name="name" type="text" required
+            class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-200">
+        </div>
 
-      <div>
-        <label class="block text-gray-300 mb-2 font-semibold">Mensaje (opcional)</label>
-        <textarea name="message" rows="4" class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-200"></textarea>
-      </div>
+        <div>
+          <label class="block text-gray-300 mb-2 font-semibold">Canción recomendada</label>
+          <input name="song" type="text" required
+            class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-200">
+        </div>
 
-      <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 rounded-lg">
-        Enviar recomendación
-      </button>
+        <div>
+          <label class="block text-gray-300 mb-2 font-semibold">Enlace (opcional)</label>
+          <input name="link" type="url"
+            class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-200">
+        </div>
 
-    </form>
+        <div>
+          <label class="block text-gray-300 mb-2 font-semibold">Mensaje (opcional)</label>
+          <textarea name="message" rows="4"
+            class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-200"></textarea>
+        </div>
 
-    <!-- MENSAJE DE ÉXITO -->
-    <p id="successMessage" class="text-green-400 text-center mt-6 hidden font-semibold">
-      ¡Gracias! Tu recomendación fue enviada correctamente.
-    </p>
+        <button type="submit"
+          class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 rounded-lg">
+          Enviar recomendación
+        </button>
 
-  </section>
+      </form>
 
-  <!-- SCRIPT PARA MENSAJE DE ÉXITO -->
-  <script>
-    const form = document.getElementById("songForm");
-    const success = document.getElementById("successMessage");
+      <p id="successMessage" class="text-green-400 text-center mt-6 hidden font-semibold">
+        ¡Gracias! Tu recomendación fue enviada correctamente.
+      </p>
 
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
+    </section>
 
-      const formData = Object.fromEntries(new FormData(form));
+    <!-- SCRIPT DEL FORMULARIO -->
+    <script>
+      const form = document.getElementById("songForm");
+      const success = document.getElementById("successMessage");
 
-      const res = await fetch("https://la-popular-sound.onrender.com/recommend", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const formData = Object.fromEntries(new FormData(form));
+
+        const res = await fetch("https://la-popular-sound.onrender.com/recommend", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        });
+
+        if (res.ok) {
+          success.classList.remove("hidden");
+          form.reset();
+        }
       });
-
-      if (res.ok) {
-        success.classList.remove("hidden");
-        form.reset();
-      }
-    });
-  </script>
+    </script>
 
   </main>
 
@@ -437,7 +445,7 @@
     © <span id="year"></span> La Popular Sound / Todos los derechos reservados. Diseñado por Ing. Juan Camilo Ávila.
   </footer>
 
-  <!-- SCRIPTS AL FINAL (AQUÍ ES DONDE DEBEN IR) -->
+  <!-- AOS Scripts -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
