@@ -374,41 +374,27 @@
 
     <form id="songForm" class="space-y-6">
 
-      <!-- NOMBRE -->
       <div>
         <label class="block text-gray-300 mb-2 font-semibold">Tu nombre</label>
-        <input type="text" required
-              class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-200 focus:border-red-600 focus:outline-none"
-              placeholder="Escribe tu nombre">
+        <input name="name" type="text" required class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-200">
       </div>
 
-      <!-- CANCIÓN -->
       <div>
         <label class="block text-gray-300 mb-2 font-semibold">Canción recomendada</label>
-        <input type="text" required
-              class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-200 focus:border-red-600 focus:outline-none"
-              placeholder="Ej. Aventurero – Yeison Jiménez">
+        <input name="song" type="text" required class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-200">
       </div>
 
-      <!-- ENLACE OPCIONAL -->
       <div>
         <label class="block text-gray-300 mb-2 font-semibold">Enlace (opcional)</label>
-        <input type="url"
-              class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-200 focus:border-red-600 focus:outline-none"
-              placeholder="Link de YouTube Music o Spotify">
+        <input name="link" type="url" class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-200">
       </div>
 
-      <!-- MENSAJE OPCIONAL -->
       <div>
-        <label class="block text-gray-300 mb-2 font-semibold">¿Por qué debería estar en los recomendados?</label>
-        <textarea rows="4"
-                  class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-200 focus:border-red-600 focus:outline-none"
-                  placeholder="Cuéntanos por qué esta canción merece ser destacada"></textarea>
+        <label class="block text-gray-300 mb-2 font-semibold">Mensaje (opcional)</label>
+        <textarea name="message" rows="4" class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg text-gray-200"></textarea>
       </div>
 
-      <!-- BOTÓN -->
-      <button type="submit"
-              class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 rounded-lg shadow-lg transition-all">
+      <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 rounded-lg">
         Enviar recomendación
       </button>
 
@@ -426,10 +412,21 @@
     const form = document.getElementById("songForm");
     const success = document.getElementById("successMessage");
 
-    form.addEventListener("submit", (e) => {
-      e.preventDefault(); // Evita recarga
-      success.classList.remove("hidden");
-      form.reset(); // Limpia campos
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const formData = Object.fromEntries(new FormData(form));
+
+      const res = await fetch("https://TU_BACKEND.onrender.com/recommend", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        success.classList.remove("hidden");
+        form.reset();
+      }
     });
   </script>
 
