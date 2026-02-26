@@ -417,7 +417,7 @@
 
       const formData = Object.fromEntries(new FormData(form));
 
-      const res = await fetch("https://la-popular-sound.onrender.com", {
+      const res = await fetch("https://la-popular-sound.onrender.com/recommend", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
