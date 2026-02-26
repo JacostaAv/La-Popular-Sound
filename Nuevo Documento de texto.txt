@@ -1,0 +1,86 @@
+<section data-aos="fade-up" class="bg-black/60 p-6 rounded-2xl shadow-xl border border-gray-700">
+      <h2 class="text-2xl font-semibold text-red-500">Los más sonados en Colombia – 2026</h2>
+      <p class="mt-4 text-gray-300 leading-relaxed">
+        Estos artistas dominaron las plataformas en el 2026, reafirmando el poder de la música
+        popular en el país.
+      </p>
+
+      <ul class="mt-6 space-y-6 text-gray-300">
+
+        <li class="bg-gray-900 p-4 rounded-xl border border-gray-700 hover:border-red-600 transition-all">
+          <h3 class="text-lg font-semibold text-red-400">Yeison Jiménez – Aventurero</h3>
+          <p class="text-sm mt-2">
+            • Más de <span class="text-white font-bold">580M</span> de reproducciones. <br />
+            • Canción emblemática en fiestas colombianas. <br />
+            • Se mantiene viral cada año.
+          </p>
+
+          <a href="https://music.youtube.com/watch?v=CC1LCUGfFU4" target="_blank"
+                    class="block bg-gray-900 p-4 rounded-xl border border-gray-700 hover:border-red-600 transition-all">
+                    
+                    <img src="https://img.youtube.com/vi/CC1LCUGfFU4/hqdefault.jpg"
+                        alt="Yeison Jiménez - Aventurero"
+                        class="rounded-lg w-full mb-4">
+
+                    <h3 class="text-lg font-semibold text-red-400">Yeison Jiménez – Aventurero</h3>
+                    <p class="text-gray-300 text-sm">Escúchalo en YouTube Music</p>
+
+          </a>
+        </li>
+
+        <li class="bg-gray-900 p-4 rounded-xl border border-gray-700 hover:border-red-600 transition-all">
+          <h3 class="text-lg font-semibold text-red-400">Luis Alfonso – Mi Palabra Contra la de Ellos</h3>
+          <p class="text-sm mt-2">
+            • +120M de streams. <br />
+            • Viral por su letra sentimental. <br />
+            • Lo consolidó como figura nacional.
+          </p>
+
+          <a href="https://music.youtube.com/watch?v=fg9Ve1wUBpc" target="_blank"
+            class="block bg-gray-900 p-4 rounded-xl border border-gray-700 hover:border-red-600 transition-all">
+            <img src="https://img.youtube.com/vi/fg9Ve1wUBpc/hqdefault.jpg"
+                alt="Luis Alfonso - Mi Palabra Contra la de Ellos"
+                class="rounded-lg w-full mb-4">
+            <h3 class="text-lg font-semibold text-red-400">Luis Alfonso – Mi Palabra Contra la de Ellos</h3>
+            <p class="text-gray-300 text-sm">Escúchala en YouTube Music</p>
+          </a>
+        </li>
+
+        <li class="bg-gray-900 p-4 rounded-xl border border-gray-700 hover:border-red-600 transition-all">
+          <h3 class="text-lg font-semibold text-red-400">Luis Alberto Posada – Sin Rencor</h3>
+          <p class="text-sm mt-2">
+            • Más de 95M de reproducciones. <br />
+            • Un himno generacional. <br />
+            • Influencia clave para nuevos artistas.
+          </p>
+
+          <a href="https://music.youtube.com/watch?v=avtC7Bv4Ro4" target="_blank"
+            class="block bg-gray-900 p-4 rounded-xl border border-gray-700 hover:border-red-600 transition-all">
+            <img src="https://img.youtube.com/vi/avtC7Bv4Ro4/hqdefault.jpg"
+                alt="Andrés Franco - Mujer Traidora"
+                class="rounded-lg w-full mb-4">
+            <h3 class="text-lg font-semibold text-red-400">Andrés Franco – Mujer Traidora</h3>
+            <p class="text-gray-300 text-sm">Escúchala en YouTube Music</p>
+          </a>
+        </li>
+
+        <li class="bg-gray-900 p-4 rounded-xl border border-gray-700 hover:border-red-600 transition-all">
+          <h3 class="text-lg font-semibold text-red-400">Andrés Franco – Mujer Traidora</h3>
+          <p class="text-sm mt-2">
+            • 40M de vistas en menos de un año. <br />
+            • Lo posicionó como nueva promesa. <br />
+            • Estilo fresco y directo.
+          </p>
+          <a href="https://music.youtube.com/watch?v=owpfw6CJS_A" target="_blank"
+            class="block bg-gray-900 p-4 rounded-xl border border-gray-700 hover:border-red-600 transition-all">
+            <img src="https://img.youtube.com/vi/owpfw6CJS_A/hqdefault.jpg"
+                alt="Luis Alberto Posada - Sin Rencor"
+                class="rounded-lg w-full mb-4">
+
+            <h3 class="text-lg font-semibold text-red-400">Luis Alberto Posada – Sin Rencor</h3>
+            <p class="text-gray-300 text-sm">Escúchala en YouTube Music</p>
+          </a>
+        </li>
+
+      </ul>
+    </section>

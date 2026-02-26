@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>La Popular Sound – Música Popular Colombiana</title>
+
+  <!-- SEO -->
+  <meta name="description" content="La Popular Sound: Lo mejor de la música popular en Colombia. Artistas, éxitos, tendencias, recomendaciones y más.">
+  <meta name="keywords" content="música popular, Colombia, Yeison Jiménez, Paola Jara, Darío Gómez, Jessi Uribe, Luis Alberto Posada, Francy">
+  <meta name="author" content="La Popular Sound">
+
+  <!-- TailwindCSS MINIMIZADO -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css">
+
+  <!-- AOS (DEFER = mejora performance) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Ocultar scrollbar sin afectar accesibilidad */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+
+<body class="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white">
+
+  <!-- HEADER -->
+  <header data-aos="fade-down"
+    class="p-6 bg-black/70 backdrop-blur-xl border-b border-red-600 shadow-[0_0_15px_#ff1a1a] sticky top-0 z-50">
+
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <h1 class="text-4xl font-extrabold tracking-wide"
+          style="color:#ff1a1a; text-shadow:0 0 12px #ff1a1a;">
+        La Popular Sound
+      </h1>
+
+      <nav>
+        <ul class="flex gap-6 text-gray-300 font-medium">
+          <li class="hover:text-red-500 transition-all">Inicio</li>
+          <li class="hover:text-red-500 transition-all">Categorías</li>
+          <li class="hover:text-red-500 transition-all">Autores</li>
+          <li class="hover:text-red-500 transition-all">Contacto</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="p-6 max-w-4xl mx-auto space-y-12">
+
+    <!-- INTRODUCCIÓN -->
+    <section data-aos="fade-up" class="mt-10 bg-black/60 p-6 rounded-2xl shadow-xl border border-gray-700">
+      <h2 class="text-2xl font-semibold text-red-500">Introducción</h2>
+      <p class="mt-4 text-gray-300 leading-relaxed">
+        La música popular en Colombia no solo se escucha… se siente. Es el sonido de las madrugadas largas,
+        de las fiestas donde todos cantan a grito herido. Aquí están los más sonados del 2026.
+      </p>
+    </section>
+
+    <!-- LOS MÁS SONADOS -->
+    <section data-aos="fade-up" class="bg-black/60 p-6 rounded-2xl shadow-xl border border-gray-700">
+      <h2 class="text-2xl font-semibold text-red-500">Los más sonados en Colombia – 2026</h2>
+      <p class="mt-4 text-gray-300 leading-relaxed">
+        Cada canción cuenta una historia que marcó este año: amor, lucha y orgullo colombiano.
+      </p>
+
+      <ul class="mt-6 space-y-6 text-gray-300">
+
+        <!-- YEISON -->
+        <li class="bg-gray-900 p-4 rounded-xl border border-gray-700 hover:border-red-600 transition-all">
+          <h3 class="text-lg font-semibold text-red-400">Yeison Jiménez – Aventurero</h3>
+          <p class="text-sm mt-2">
+            • Más de <span class="text-white font-bold">580M</span> de reproducciones. <br />
+            • Himno absoluto en fiestas colombianas.
+          </p>
+
+          <a href="https://music.youtube.com/watch?v=CC1LCUGfFU4" target="_blank"
+            class="block bg-gray-900 p-4 rounded-xl border border-gray-700 hover:border-red-600 transition-all">
+
+            <img loading="lazy"
+                src="https://img.youtube.com/vi/CC1LCUGfFU4/hqdefault.jpg"
+                alt="Yeison Jiménez - Aventurero"
+                class="rounded-lg w-full mb-4" width="400" height="300">
+
+            <h3 class="text-lg font-semibold text-red-400">Escúchalo en YouTube Music</h3>
+          </a>
+        </li>
+
+        <!-- LUIS ALFONSO -->
+        <li class="bg-gray-900 p-4 rounded-xl border border-gray-700 hover:border-red-600 transition-all">
+          <h3 class="text-lg font-semibold text-red-400">Luis Alfonso – Mi Palabra Contra la de Ellos</h3>
+          <p class="text-sm mt-2">
+            • +120M de streams. <br />
+            • Letra que lo consagró nacionalmente.
+          </p>
+
+          <a href="https://music.youtube.com/watch?v=fg9Ve1wUBpc" target="_blank"
+            class="block bg-gray-900 p-4 rounded-xl border border-gray-700 hover:border-red-600 transition-all">
+
+            <img loading="lazy"
+                src="https://img.youtube.com/vi/fg9Ve1wUBpc/hqdefault.jpg"
+                alt="Luis Alfonso - Mi Palabra Contra la de Ellos"
+                class="rounded-lg w-full mb-4" width="400" height="300">
+
+            <h3 class="text-lg font-semibold text-red-400">Escúchala en YouTube Music</h3>
+          </a>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- CARRUSEL AUTORES -->
+    <section data-aos="fade-up" class="bg-black/60 p-6 rounded-2xl shadow-xl border border-gray-700">
+
+      <h2 class="text-2xl font-semibold text-red-500 mb-4">Autores</h2>
+      <p class="text-gray-300 mb-6 leading-relaxed">
+        Las voces más influyentes de la música popular en Colombia.
+      </p>
+
+      <div class="relative">
+
+        <!-- CARRUSEL -->
+        <div id="autoresCarousel"
+             class="flex gap-4 overflow-x-auto scroll-smooth no-scrollbar">
+
+          <!-- Ejemplo de autor -->
+          <a href="https://music.youtube.com/watch?v=1Vas-mC44A0" target="_blank"
+            class="min-w-[220px] bg-gray-900 rounded-xl border border-gray-700 hover:border-red-600 transition-all p-3">
+
+            <img loading="lazy"
+                src="https://img.youtube.com/vi/1Vas-mC44A0/hqdefault.jpg"
+                width="300" height="200"
+                class="rounded-lg w-full mb-3"
+                alt="Darío Gómez - Nadie Es Eterno">
+
+            <h3 class="text-lg font-semibold text-red-400">Darío Gómez</h3>
+            <p class="text-gray-300 text-sm">Nadie Es Eterno</p>
+          </a>
+
+          <!-- Aquí siguen tus otros autores (idénticos visualmente) -->
+        </div>
+
+        <!-- FLECHAS -->
+        <button id="prevBtn"
+          class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 p-3 rounded-full border border-red-600 hover:bg-red-600 transition">
+          ◀
+        </button>
+
+        <button id="nextBtn"
+          class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/60 p-3 rounded-full border border-red-600 hover:bg-red-600 transition">
+          ▶
+        </button>
+
+      </div>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section data-aos="fade-up" class="bg-black/60 p-8 rounded-2xl shadow-xl border border-gray-700 mt-16 max-w-3xl mx-auto">
+
+      <h2 class="text-3xl font-bold text-red-500 text-center">
+        ¿Qué canción debería estar en los recomendados de la próxima semana?
+      </h2>
+
+      <p class="text-gray-300 text-center mt-3 mb-8">
+        Déjanos tu recomendación y podrá aparecer en nuestra lista oficial.
+      </p>
+
+      <form id="songForm" class="space-y-6">
+
+        <div>
+          <label class="block text-gray-300 mb-2 font-semibold">Tu nombre</label>
+          <input type="text" required
+            class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg">
+        </div>
+
+        <div>
+          <label class="block text-gray-300 mb-2 font-semibold">Canción recomendada</label>
+          <input type="text" required
+            class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg">
+        </div>
+
+        <button type="submit"
+            class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 rounded-lg shadow-lg">
+          Enviar recomendación
+        </button>
+
+      </form>
+
+      <p id="successMessage" class="text-green-400 text-center mt-6 hidden font-semibold">
+        ¡Gracias! Tu recomendación fue enviada correctamente.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="p-6 text-center text-gray-500 border-t border-gray-700 mt-10">
+    © <span id="year"></span> La Popular Sound
+  </footer>
+
+  <!-- JS OPTIMIZADO (DEFER) -->
+  <script defer src="app.js"></script>
+
+</body>
+</html>
